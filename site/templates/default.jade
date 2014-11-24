@@ -1,0 +1,6 @@
+extends _main
+
+block content
+  article
+    h1!= html($page->title())
+    != kirbytext($page->text())

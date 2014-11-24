@@ -1,0 +1,5 @@
+nav.menu
+  ul
+    each $p in $pages->visible()
+      li
+        a(class=$p->isOpen() ? 'active' : '', href=$p->url())= $p->title()
