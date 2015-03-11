@@ -4,3 +4,6 @@
 [submodule "panel"]
 	path = panel
 	url = https://github.com/getkirby/panel.git
+[submodule "site/plugins/jade"]
+	path = site/plugins/jade
+	url = https://github.com/lehni/jade.php.git

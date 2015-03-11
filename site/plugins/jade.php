@@ -12,7 +12,10 @@ if(!defined('KIRBY')) die('Direct access is not allowed');
 
 spl_autoload_register(function($class) {
   if(strstr($class, 'Jade'))
-    include_once(str_replace('\\', DS, $class) . '.php');
+    include_once(
+      str_replace('\\', DS, 
+        str_replace('Jade\\', 'jade' . DS . 'src' . DS . 'Jade' . DS, $class))
+          . '.php');
 });
 
 function jade($template) {
