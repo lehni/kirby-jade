@@ -1,8 +1,0 @@
-$open = $pages->findOpen()
-$items = $open ? $open->children()->visible() : false
-if $items && $items->count()
-  nav.submenu
-    ul
-      each $item in $items
-        li
-          a(class=$item->isOpen() ? 'active' : '', href=$item->url())=$item->title()
