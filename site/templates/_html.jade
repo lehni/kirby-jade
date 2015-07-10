@@ -11,7 +11,4 @@ html(lang="en")
     include _header
     main.main(role="main")
       block content
-        div.text
-          h1!= $page->title()->html()
-          != $page->text()->kirbytext()
     include _footer
