@@ -3,8 +3,8 @@ nav(role="navigation")
     each $p in $pages->visible()
       li
         a(class=$p->isOpen() ? 'active' : '', href=$p->url())!= $p->title()->html()
-      if $p->hasVisibleChildren()
-        ul.submenu
-          each $p in $p->children()->visible()
-            li
-              a(href=$p->url())!= $p->title()->html()
+        if $p->hasVisibleChildren()
+          ul.submenu
+            each $p in $p->children()->visible()
+              li
+                a(href=$p->url())!= $p->title()->html()
