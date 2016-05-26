@@ -1,0 +1,21 @@
+extends _html
+
+block content
+  h1!= $page->title()->html()
+  ul.meta.cf
+    li
+      b Year:
+      time(datetime=$page->date('c'))= $page->date('Y', 'year')
+    li
+      b Tags:
+      = $page->tags()
+  div.text
+    != $page->text()->kirbytext()
+    each $image in $page->images()->sortBy('sort', 'asc')
+      figure
+        img(src=$image->url(), alt=$page->title()->html())
+  nav.nextprev.cf(role="navigation")
+    if $prev = $page->prevVisible()
+      a.prev(href=$prev->url()) &larr; previous
+    if $next = $page->nextVisible()
+      a.next(href=$next->url()) next &rarr;
