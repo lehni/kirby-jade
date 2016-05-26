@@ -1,0 +1,5 @@
+{
+    "host": "some-host:3306",
+    "password": "12345",
+    "encoding": "iso-8859-1"
+}

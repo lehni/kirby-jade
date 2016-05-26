@@ -1,0 +1,8 @@
+{
+  "name": "jade",
+  "description": "Kirby Jade Plugin",
+  "author": "Leo Koppelkamm <hello@leo-koppelkamm.de>",
+  "license": "MIT",
+  "version": "1.0.0",
+  "type": "kirby-plugin"
+}

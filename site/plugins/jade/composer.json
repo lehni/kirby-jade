@@ -1,0 +1,23 @@
+{
+    "name": "lehni/kirby-jade",
+    "description": "Jade template engine for Kirby",
+    "require": {
+        "talesoft/tale-jade": "dev-fix-circular"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url":  "https://github.com/ponychicken/tale-jade"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Leo Koppelkamm",
+            "email": "hello@leo-koppelkamm.de"
+        },
+        {
+            "name": "Jürg Lehni",
+            "email": "juerg@lehni.org"
+        }
+    ]
+}

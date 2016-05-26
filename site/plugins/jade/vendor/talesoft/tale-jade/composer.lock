@@ -1,0 +1,176 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "4cdbd4ae1c8efc235607a19c612fcf54",
+    "content-hash": "ac81f1fe9a2be02c46724a4eaaab0ab7",
+    "packages": [
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "1289d16209491b584839022f29257ad859b8532d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/1289d16209491b584839022f29257ad859b8532d",
+                "reference": "1289d16209491b584839022f29257ad859b8532d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2016-01-20 09:13:37"
+        },
+        {
+            "name": "talesoft/tale-config",
+            "version": "0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Talesoft/tale-config.git",
+                "reference": "1a9304e99753fa74c4f43722b52388df8015eb03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Talesoft/tale-config/zipball/1a9304e99753fa74c4f43722b52388df8015eb03",
+                "reference": "1a9304e99753fa74c4f43722b52388df8015eb03",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "talesoft/tale-factory": "~0.1"
+            },
+            "suggest": {
+                "symfony/yaml": "for YAML-configuration",
+                "talesoft/tale-dom": "for XML-configuration"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tale\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Torben Koehn",
+                    "email": "tk@talesoft.io"
+                },
+                {
+                    "name": "Talesoft",
+                    "email": "info@talesoft.io",
+                    "homepage": "http://talesoft.io"
+                }
+            ],
+            "description": "Lightweight configuration interfaces and utilities",
+            "homepage": "http://docs.talesoft.io/tale-framework/tale/config",
+            "keywords": [
+                "config",
+                "options"
+            ],
+            "time": "2016-03-01 22:39:06"
+        },
+        {
+            "name": "talesoft/tale-factory",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Talesoft/tale-factory.git",
+                "reference": "2ff9f746d1636048b9c0cc7c9c24d17c82c3a7ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Talesoft/tale-factory/zipball/2ff9f746d1636048b9c0cc7c9c24d17c82c3a7ac",
+                "reference": "2ff9f746d1636048b9c0cc7c9c24d17c82c3a7ac",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tale\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Torben Koehn",
+                    "email": "tk@talesoft.io"
+                },
+                {
+                    "name": "Talesoft",
+                    "email": "info@talesoft.io",
+                    "homepage": "http://talesoft.io"
+                }
+            ],
+            "description": "A small and lightweight implementation of the factory pattern",
+            "homepage": "http://docs.talesoft.io/tale-framework/tale/factory",
+            "keywords": [
+                "factory"
+            ],
+            "time": "2016-03-01 19:06:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.5.0"
+    },
+    "platform-dev": []
+}

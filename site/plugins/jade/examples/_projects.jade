@@ -1,0 +1,11 @@
+h2 Latest projects
+ul.teaser.cf
+  each $project in page('projects')->children()->visible()->limit(3)
+    li
+      h3
+        a(href=$project->url())!= $project->title()->html()
+      p!= $project->text()->excerpt(80)
+        a(href=$project->url()) read&nbsp;more&nbsp;→
+      if $image = $project->images()->sortBy('sort', 'asc')->first()
+        a(href=$project->url())
+          img(src=$image->url(), alt=$project->title()->html())

@@ -1,0 +1,33 @@
+{
+    "name": "talesoft/tale-config",
+    "type": "library",
+    "keywords": ["config", "options"],
+    "description": "Lightweight configuration interfaces and utilities",
+    "license": "MIT",
+    "homepage": "http://docs.talesoft.io/tale-framework/tale/config",
+    "authors": [
+        {
+            "name": "Talesoft",
+            "homepage": "http://talesoft.io",
+            "email": "info@talesoft.io"
+        },
+        {
+            "name": "Torben Koehn",
+            "email": "tk@talesoft.io"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5.0",
+        "talesoft/tale-factory": "~0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tale\\": ""
+        }
+    },
+    "suggest": {
+        "talesoft/tale-dom": "for XML-configuration",
+        "symfony/yaml": "for YAML-configuration"
+    }
+}
